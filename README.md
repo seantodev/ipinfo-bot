@@ -24,3 +24,6 @@ Bu, IP adreslerini sorgulamak ve ilgili bilgileri Discord sunucularında görün
 3. Console kısmına npm install yazın.
 
 4. Tüm moduleler indirilince npm start yazıp başlatabilirsiniz.
+
+
+PROJEYİ ŞUANLIK RAR OLARAK İNDİRİP KULLANIN, SRC VİEWİ 2 GÜNE PUSHLAYACAĞIM.
