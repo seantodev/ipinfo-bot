@@ -1,4 +1,4 @@
-IP Info Discord Bot
+**IP Info Discord Bot**
 Bu, IP adreslerini sorgulamak ve ilgili bilgileri Discord sunucularında görüntülemek için kullanılan bir Discord botudur. Bot, kullanıcıların IP adresiyle ilgili detayları kolayca almasına olanak tanır ve çeşitli bilgileri görsel olarak sunar.
 
 Özellikler
