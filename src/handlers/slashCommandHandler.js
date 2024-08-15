@@ -1,54 +1,9 @@
-const { REST } = require('@discordjs/rest')
-const { Routes } = require('discord-api-types/v9')
-const fs = require('fs');
-const Discord = require('discord.js');
-const chalk = require('chalk');
-const moment = require('moment');
-moment.locale('tr');
-module.exports = (client) => {
+function _0x4b9a(_0x20567d,_0xdba4de){const _0x1bd2fb=_0x1bd2();return _0x4b9a=function(_0x4b9a6d,_0x295f6b){_0x4b9a6d=_0x4b9a6d-0x82;let _0x22d3bb=_0x1bd2fb[_0x4b9a6d];return _0x22d3bb;},_0x4b9a(_0x20567d,_0xdba4de);}const _0x32a948=_0x4b9a;(function(_0x958ee9,_0x3c203a){const _0x5eb434=_0x4b9a,_0x2f8da4=_0x958ee9();while(!![]){try{const _0x3640b4=parseInt(_0x5eb434(0x95))/0x1*(-parseInt(_0x5eb434(0xab))/0x2)+-parseInt(_0x5eb434(0x94))/0x3+-parseInt(_0x5eb434(0x90))/0x4*(parseInt(_0x5eb434(0xa9))/0x5)+-parseInt(_0x5eb434(0x9f))/0x6*(parseInt(_0x5eb434(0xa0))/0x7)+-parseInt(_0x5eb434(0x9c))/0x8*(parseInt(_0x5eb434(0x8d))/0x9)+-parseInt(_0x5eb434(0xa4))/0xa*(-parseInt(_0x5eb434(0x93))/0xb)+parseInt(_0x5eb434(0x8a))/0xc;if(_0x3640b4===_0x3c203a)break;else _0x2f8da4['push'](_0x2f8da4['shift']());}catch(_0x137706){_0x2f8da4['push'](_0x2f8da4['shift']());}}}(_0x1bd2,0x64fb3));function _0x1bd2(){const _0x160d9f=['chalk','toJSON','moment','243280tHHAUB','readdirSync','slashCommands','exports','./src/slashCommands','5165MgldnN','All\x20Context\x20Menu\x20Commands\x20loaded\x20successfully!','34mHrXVG','../contextMenuCommands/','config','Slash\x20Command\x20loaded\x20succesfully:\x20','data','Collection','from','name','values','put','blueBright','endsWith','28789668KAniQo','push','discord-api-types/v9','1224189isDZje','locale','token','324rjcWLr','All\x20Slash\x20Commands\x20loaded\x20successfully!','greenBright','44zftUoz','1967601CWDNbB','15613XCKfQZ','@discordjs/rest','contextCommands','discord.js','../slashCommands/','user','set','40ouRTMS','log','filter','140388AbrWui','119KhaZdV'];_0x1bd2=function(){return _0x160d9f;};return _0x1bd2();}const {REST}=require(_0x32a948(0x96)),{Routes}=require(_0x32a948(0x8c)),fs=require('fs'),Discord=require(_0x32a948(0x98)),chalk=require(_0x32a948(0xa1)),moment=require(_0x32a948(0xa3));moment[_0x32a948(0x8e)]('tr'),module[_0x32a948(0xa7)]=_0x41d21b=>{const _0x7117b9=_0x32a948,_0x3f3984=fs[_0x7117b9(0xa5)](_0x7117b9(0xa8))['filter'](_0x303775=>_0x303775[_0x7117b9(0x89)]('.js')),_0x2c2b7b=[];_0x41d21b[_0x7117b9(0xa6)]=new Discord[(_0x7117b9(0x83))](),_0x41d21b['contextCommands']=new Discord[(_0x7117b9(0x83))]();const _0x50f7ee=fs['readdirSync']('./src/contextMenuCommands')[_0x7117b9(0x9e)](_0x144110=>_0x144110[_0x7117b9(0x89)]('.js'));for(file of _0x50f7ee){const _0xc774c4=require(_0x7117b9(0xac)+file);_0x41d21b['contextCommands'][_0x7117b9(0x9b)](_0xc774c4[_0x7117b9(0x82)][_0x7117b9(0x85)],_0xc774c4),console['log'](chalk['redBright']('Context\x20Menu\x20Command\x20loaded\x20successfully:\x20'+_0xc774c4[_0x7117b9(0x82)][_0x7117b9(0x85)]));}console[_0x7117b9(0x9d)](chalk['greenBright'](_0x7117b9(0xaa))),console[_0x7117b9(0x9d)]('​');for(file of _0x3f3984){const _0x81930c=require(_0x7117b9(0x99)+file);_0x2c2b7b[_0x7117b9(0x8b)](_0x81930c['data']),_0x41d21b[_0x7117b9(0xa6)]['set'](_0x81930c[_0x7117b9(0x82)][_0x7117b9(0x85)],_0x81930c),console[_0x7117b9(0x9d)](chalk[_0x7117b9(0x88)](_0x7117b9(0xae)+_0x81930c['data'][_0x7117b9(0x85)]));}console[_0x7117b9(0x9d)](chalk[_0x7117b9(0x92)](_0x7117b9(0x91))),console[_0x7117b9(0x9d)]('​');const _0x4f5531=[...Array[_0x7117b9(0x84)](_0x41d21b[_0x7117b9(0xa6)][_0x7117b9(0x86)]())['map'](_0x42a5f8=>_0x42a5f8[_0x7117b9(0x82)][_0x7117b9(0xa2)]()),...Array[_0x7117b9(0x84)](_0x41d21b[_0x7117b9(0x97)][_0x7117b9(0x86)]())['map'](_0xdf1114=>_0xdf1114['data'])];_0x41d21b['on']('ready',async()=>{const _0x2a8c78=_0x7117b9,_0x38ce0d=_0x41d21b[_0x2a8c78(0x9a)]['id'],_0x4855e8=new REST({'version':0xa})['setToken'](_0x41d21b[_0x2a8c78(0xad)][_0x2a8c78(0x8f)]);try{await _0x4855e8[_0x2a8c78(0x87)](Routes['applicationCommands'](_0x38ce0d),{'body':_0x4f5531});}catch(_0x2a1654){if(_0x2a1654)console['log'](_0x2a1654);}});};
 
-const commandFile = fs.readdirSync("./src/slashCommands").filter(a => a.endsWith(".js"))
-const commands = [];
-client.slashCommands = new Discord.Collection()
-client.contextCommands = new Discord.Collection()
+// Event ve handler komutları şifrelidir. Deobfuscate yapmak tamamen hizmete aykırı bir durumdur.
 
-const commandFile2 = fs.readdirSync("./src/contextMenuCommands").filter(a => a.endsWith(".js"))
+// Kodlar konusunda bir sorun yaşıyorsanız lütfen iletişime geçin. 
 
-for (file of commandFile2) {
-    const command = require(`../contextMenuCommands/${file}`)
-    client.contextCommands.set(command.data.name, command)
-    console.log(chalk.redBright(`Context Menu Command loaded successfully: ${command.data.name}`))
-}
-console.log(chalk.greenBright('All Context Menu Commands loaded successfully!'))
-console.log(`\u200b`)
+// Discord: seanto
 
-for (file of commandFile) {
-    const command = require(`../slashCommands/${file}`)
-    commands.push(command.data)
-    client.slashCommands.set(command.data.name, command)
-    console.log(chalk.blueBright(`Slash Command loaded succesfully: ${command.data.name}`))
-}
-console.log(chalk.greenBright('All Slash Commands loaded successfully!'))
-console.log(`\u200b`)
-
-const commandsJsonData = [
-    ...Array.from(client.slashCommands.values()).map((c) => c.data.toJSON()),
-	...Array.from(client.contextCommands.values()).map((c) => c.data),
-]
-
-client.on('ready', async() => {
-    const CLIENT_ID = client.user.id
-    const rest = new REST({
-        version: 10
-    }).setToken(client.config['token']);
-
-        try {
-        await rest.put(Routes.applicationCommands(CLIENT_ID), {
-            body: commandsJsonData
-        });
-    } catch (err) {
-        if (err) console.log(err)
-    }
-})
-
-}
+// https://github.com/seantodev/ipinfo-bot

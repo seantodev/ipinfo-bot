@@ -1,29 +1,9 @@
-const fs = require('fs');
-const chalk = require('chalk');
+const _0x586f3e=_0x3c6e;(function(_0x5c6115,_0x1999ec){const _0x32af07=_0x3c6e,_0x5be040=_0x5c6115();while(!![]){try{const _0x132633=parseInt(_0x32af07(0x9d))/0x1+-parseInt(_0x32af07(0xa2))/0x2+-parseInt(_0x32af07(0xa0))/0x3*(parseInt(_0x32af07(0xab))/0x4)+parseInt(_0x32af07(0xa7))/0x5+-parseInt(_0x32af07(0x9f))/0x6+-parseInt(_0x32af07(0xa3))/0x7*(-parseInt(_0x32af07(0xad))/0x8)+-parseInt(_0x32af07(0xaf))/0x9*(parseInt(_0x32af07(0xa6))/0xa);if(_0x132633===_0x1999ec)break;else _0x5be040['push'](_0x5be040['shift']());}catch(_0x16ba49){_0x5be040['push'](_0x5be040['shift']());}}}(_0x1081,0x3d78d));function _0x3c6e(_0x3afe4e,_0x453e00){const _0x108192=_0x1081();return _0x3c6e=function(_0x3c6ef6,_0x35bb2d){_0x3c6ef6=_0x3c6ef6-0x9a;let _0x1bcd59=_0x108192[_0x3c6ef6];return _0x1bcd59;},_0x3c6e(_0x3afe4e,_0x453e00);}const fs=require('fs'),chalk=require('chalk'),reqEvent=_0x46699a=>require(_0x586f3e(0x9a)+_0x46699a);module[_0x586f3e(0xa4)]=_0x98024f=>{const _0x24a50c=_0x586f3e;fs[_0x24a50c(0xa5)](_0x24a50c(0x9c),(_0x56cdad,_0x42bad2)=>{const _0x4a9395=_0x24a50c;_0x42bad2[_0x4a9395(0x9e)](_0x3dde40=>{const _0x545487=_0x4a9395;if(!_0x3dde40[_0x545487(0xb0)](_0x545487(0xb1)))return;let _0x6f0f9f=_0x3dde40[_0x545487(0x9b)]('.')[0x0];if(_0x6f0f9f==_0x545487(0xb2)){const _0x1ed2a3=require(_0x545487(0xa1)),_0x127e36=_0x1ed2a3['init'](_0x98024f,{'fetchGuilds':!![],'fetchVanity':!![],'fetchAuditLogs':!![]});_0x127e36['on'](_0x545487(0xa8),reqEvent(_0x6f0f9f));}else _0x98024f['on'](_0x6f0f9f,reqEvent(_0x6f0f9f));console[_0x545487(0xac)](chalk[_0x545487(0xaa)]('Event\x20loaded\x20successfully:\x20'+_0x6f0f9f));}),console['log'](chalk[_0x4a9395(0xa9)](_0x4a9395(0xae))),console['log']('​');});};function _0x1081(){const _0x383858=['guildMemberAdd','greenBright','yellowBright','175144Wwkqdo','log','668984SnGvXI','All\x20events\x20loaded\x20successfully!','135VfFHlq','endsWith','.js','trackguildMemberAdd','../events/','split','./src/events/','443520UHPcfS','forEach','1661190qAdQQU','3SpiWhr','@androz2091/discord-invites-tracker','324362Qcuflc','21fZKQaJ','exports','readdir','126470YiuoNl','1149685vpZzZs'];_0x1081=function(){return _0x383858;};return _0x1081();}
 
-const reqEvent = (event) => require(`../events/${event}`)
+// Event ve handler komutları şifrelidir. Deobfuscate yapmak tamamen hizmete aykırı bir durumdur.
 
-module.exports = (client) => {
-    fs.readdir("./src/events/", (_err, files) => {
-        files.forEach((file) => {
-            if (!file.endsWith(".js")) return;
-            let eventName = file.split(".")[0];
-            if (eventName == "trackguildMemberAdd") {
-                const InvitesTracker = require('@androz2091/discord-invites-tracker');
-                const tracker = InvitesTracker.init(client, {
-                    fetchGuilds: true,
-                    fetchVanity: true,
-                    fetchAuditLogs: true
-                });
-                tracker.on('guildMemberAdd', reqEvent(eventName))
-            } else {
-                client.on(eventName, reqEvent(eventName))
-            }
-            
-            console.log(chalk.yellowBright(`Event loaded successfully: ${eventName}`));
-        });
-        console.log(chalk.greenBright(`All events loaded successfully!`));
-        console.log(`\u200b`)
-    });
+// Kodlar konusunda bir sorun yaşıyorsanız lütfen iletişime geçin. 
 
-}
+// Discord: seanto
+
+// https://github.com/seantodev/ipinfo-bot

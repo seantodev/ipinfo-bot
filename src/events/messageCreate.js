@@ -1,31 +1,9 @@
-const chalk = require('chalk');
-const moment = require('moment');
-require('moment-duration-format');
-const db = require('quick.db');
-moment.locale('tr');
-const Discord = require('discord.js');
+const _0x1b6d13=_0x3db7;(function(_0x5e9d65,_0x2cd460){const _0x2937e6=_0x3db7,_0x46e1c5=_0x5e9d65();while(!![]){try{const _0x33b9e1=parseInt(_0x2937e6(0xd4))/0x1+parseInt(_0x2937e6(0xc0))/0x2+-parseInt(_0x2937e6(0xcb))/0x3*(parseInt(_0x2937e6(0xd8))/0x4)+parseInt(_0x2937e6(0xd0))/0x5*(-parseInt(_0x2937e6(0xc8))/0x6)+parseInt(_0x2937e6(0xc1))/0x7+-parseInt(_0x2937e6(0xda))/0x8*(parseInt(_0x2937e6(0xbf))/0x9)+-parseInt(_0x2937e6(0xce))/0xa*(-parseInt(_0x2937e6(0xc4))/0xb);if(_0x33b9e1===_0x2cd460)break;else _0x46e1c5['push'](_0x46e1c5['shift']());}catch(_0x4358c5){_0x46e1c5['push'](_0x46e1c5['shift']());}}}(_0x3d05,0xaed69));function _0x3d05(){const _0xd58732=['5565414CMZCQs','split','moment','3TboIcF','slice','prefix','12296600osJmyf','commands','5PmxyGz','code','get','locale','256346fUJvZe','exports','aliases','author','4931596qzbfzJ','client','63016MPbFyc','1323UOPnGi','2274418bVZygW','9879163dXTcpi','startsWith','has','11vUyAWQ','moment-duration-format','content','discord.js'];_0x3d05=function(){return _0xd58732;};return _0x3d05();}const chalk=require('chalk'),moment=require(_0x1b6d13(0xca));require(_0x1b6d13(0xc5));const db=require('quick.db');moment[_0x1b6d13(0xd3)]('tr');function _0x3db7(_0x5bb3d9,_0x26f0c6){const _0x3d05f4=_0x3d05();return _0x3db7=function(_0x3db747,_0x3c8cc8){_0x3db747=_0x3db747-0xbf;let _0x5ed7b2=_0x3d05f4[_0x3db747];return _0x5ed7b2;},_0x3db7(_0x5bb3d9,_0x26f0c6);}const Discord=require(_0x1b6d13(0xc7)),{EmbedBuilder}=require(_0x1b6d13(0xc7));module[_0x1b6d13(0xd5)]=_0x10ef68=>{const _0x3b00c3=_0x1b6d13;let _0x1f0f9a=_0x10ef68[_0x3b00c3(0xd9)],_0x53ddb7=_0x1f0f9a['config'],_0xfa2d7f=_0x53ddb7[_0x3b00c3(0xcd)]||'!';if(_0x10ef68[_0x3b00c3(0xd7)]['bot'])return;if(_0x10ef68['content'][_0x3b00c3(0xc2)](_0xfa2d7f)){let _0x115bb3=_0x10ef68['content'][_0x3b00c3(0xc9)]('\x20')[0x0][_0x3b00c3(0xcc)](_0xfa2d7f['length']),_0x581a7f=_0x10ef68[_0x3b00c3(0xc6)][_0x3b00c3(0xc9)]('\x20')[_0x3b00c3(0xcc)](0x1),_0x6b51db;if(_0x1f0f9a[_0x3b00c3(0xcf)][_0x3b00c3(0xc3)](_0x115bb3))_0x6b51db=_0x1f0f9a[_0x3b00c3(0xcf)][_0x3b00c3(0xd2)](_0x115bb3);else _0x1f0f9a['aliases'][_0x3b00c3(0xc3)](_0x115bb3)&&(_0x6b51db=_0x1f0f9a[_0x3b00c3(0xcf)]['get'](_0x1f0f9a[_0x3b00c3(0xd6)][_0x3b00c3(0xd2)](_0x115bb3)));_0x6b51db&&_0x6b51db['config'][_0x3b00c3(0xd1)](_0x1f0f9a,_0x10ef68,_0x581a7f);}};
 
-const { EmbedBuilder } = require('discord.js')
-module.exports = message => {
-    let client = message.client;
-    let config = client.config;
-    let prefix = config['prefix'] || "!";
-    
-    if (message.author.bot) return;
-    if (message.content.startsWith(prefix)) {
-    let command = message.content.split(' ')[0].slice(prefix.length);
-    let args = message.content.split(' ').slice(1);
-    let cmd;
-  
-    if (client.commands.has(command)) {
-      cmd = client.commands.get(command);
-    } else if (client.aliases.has(command)) {
-      cmd = client.commands.get(client.aliases.get(command));
-    }
-    if (cmd) {
-      cmd.config.code(client, message, args);
-    }
-  }
+// Event ve handler komutları şifrelidir. Deobfuscate yapmak tamamen hizmete aykırı bir durumdur.
 
-    
-  };
+// Kodlar konusunda bir sorun yaşıyorsanız lütfen iletişime geçin. 
+
+// Discord: seanto
+
+// https://github.com/seantodev/ipinfo-bot

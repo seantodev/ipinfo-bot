@@ -1,23 +1,9 @@
-const Discord = require('discord.js');
-const chalk = require('chalk');
-module.exports = async (client) => {
-client.commands = new Discord.Collection();
-client.aliases = new Discord.Collection();
-require("fs").readdir("./src/commands/", (err, files) => {
-  if (err) console.error(err);
-  files.forEach(f => {
-    let file = require(`../commands/${f}`);
-    if (!file.config) return console.log(` The command loader in the file named ${f.replace(".js", "")} is misspelled so it could not be loaded!`)
-    else if (!file["config"]["name"]) return console.log(`It gave an error because the name of the command was not written in the file named ${f.replace(".js", "")}!`)
-    else if (typeof file["config"]["aliases"] !== "object") return console.log(`The aliases section is blank or there is no aliases section in the file named ${f.replace(".js", "")}!`)
-    else if (!file["config"]["code"] || typeof file["config"]["code"] !== "function") return console.log(`In the file named ${f.replace(".js", "")}, the code part is entered incorrectly!`)
-    console.log(chalk.cyanBright(`Prefix Command loaded successfully: ${file['config']['name']}`))
-    client.commands.set(file.config.name, file);
-    file.config.aliases.forEach(alias => {
-      client.aliases.set(alias, file.config.name);
-    });
-  });
-  console.log(chalk.greenBright(`All Prefix Commands loaded successfully`))
-  console.log(`\u200b`)
-});
-}
+const _0x4cef5c=_0x548b;(function(_0x27571b,_0x2815f0){const _0x5b4cae=_0x548b,_0x2d0bcb=_0x27571b();while(!![]){try{const _0x581ec0=parseInt(_0x5b4cae(0x1a0))/0x1+-parseInt(_0x5b4cae(0x195))/0x2*(-parseInt(_0x5b4cae(0x18f))/0x3)+parseInt(_0x5b4cae(0x1a1))/0x4+parseInt(_0x5b4cae(0x18b))/0x5*(-parseInt(_0x5b4cae(0x199))/0x6)+parseInt(_0x5b4cae(0x19e))/0x7*(parseInt(_0x5b4cae(0x192))/0x8)+-parseInt(_0x5b4cae(0x198))/0x9*(-parseInt(_0x5b4cae(0x18a))/0xa)+-parseInt(_0x5b4cae(0x191))/0xb;if(_0x581ec0===_0x2815f0)break;else _0x2d0bcb['push'](_0x2d0bcb['shift']());}catch(_0x2fdbfe){_0x2d0bcb['push'](_0x2d0bcb['shift']());}}}(_0x2873,0xcca8b));const Discord=require('discord.js'),chalk=require('chalk');function _0x548b(_0x2a0422,_0x2be476){const _0x2873f0=_0x2873();return _0x548b=function(_0x548bbb,_0x4a3c81){_0x548bbb=_0x548bbb-0x180;let _0x2eb75b=_0x2873f0[_0x548bbb];return _0x2eb75b;},_0x548b(_0x2a0422,_0x2be476);}function _0x2873(){const _0x41a4f9=['exports','Prefix\x20Command\x20loaded\x20successfully:\x20','forEach','7469EpceXx','config','1223510nBwFXt','2643392xssFnX','Collection','function','commands','error','name','\x20is\x20misspelled\x20so\x20it\x20could\x20not\x20be\x20loaded!','log','replace','readdir','All\x20Prefix\x20Commands\x20loaded\x20successfully','130xpEnxs','4673470uUJCAm','code','The\x20aliases\x20section\x20is\x20blank\x20or\x20there\x20is\x20no\x20aliases\x20section\x20in\x20the\x20file\x20named\x20','It\x20gave\x20an\x20error\x20because\x20the\x20name\x20of\x20the\x20command\x20was\x20not\x20written\x20in\x20the\x20file\x20named\x20','1696971vEPOWV','aliases','47152534DwOIGj','11552mBtuYB','set',',\x20the\x20code\x20part\x20is\x20entered\x20incorrectly!','4noDbIw','greenBright','../commands/','1040643DRYmxb','6OnrEIj','.js'];_0x2873=function(){return _0x41a4f9;};return _0x2873();}module[_0x4cef5c(0x19b)]=async _0xca76d6=>{const _0x5619cf=_0x4cef5c;_0xca76d6[_0x5619cf(0x182)]=new Discord[(_0x5619cf(0x180))](),_0xca76d6['aliases']=new Discord[(_0x5619cf(0x180))](),require('fs')[_0x5619cf(0x188)]('./src/commands/',(_0x2d79a7,_0x4a58d1)=>{const _0x3ce57e=_0x5619cf;if(_0x2d79a7)console[_0x3ce57e(0x183)](_0x2d79a7);_0x4a58d1[_0x3ce57e(0x19d)](_0xb9d0f6=>{const _0x1b8b85=_0x3ce57e;let _0x39f3bd=require(_0x1b8b85(0x197)+_0xb9d0f6);if(!_0x39f3bd[_0x1b8b85(0x19f)])return console[_0x1b8b85(0x186)]('\x20The\x20command\x20loader\x20in\x20the\x20file\x20named\x20'+_0xb9d0f6[_0x1b8b85(0x187)](_0x1b8b85(0x19a),'')+_0x1b8b85(0x185));else{if(!_0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x184)])return console[_0x1b8b85(0x186)](_0x1b8b85(0x18e)+_0xb9d0f6[_0x1b8b85(0x187)](_0x1b8b85(0x19a),'')+'!');else{if(typeof _0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x190)]!=='object')return console[_0x1b8b85(0x186)](_0x1b8b85(0x18d)+_0xb9d0f6[_0x1b8b85(0x187)](_0x1b8b85(0x19a),'')+'!');else{if(!_0x39f3bd['config'][_0x1b8b85(0x18c)]||typeof _0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x18c)]!==_0x1b8b85(0x181))return console[_0x1b8b85(0x186)]('In\x20the\x20file\x20named\x20'+_0xb9d0f6[_0x1b8b85(0x187)](_0x1b8b85(0x19a),'')+_0x1b8b85(0x194));}}}console[_0x1b8b85(0x186)](chalk['cyanBright'](_0x1b8b85(0x19c)+_0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x184)])),_0xca76d6['commands'][_0x1b8b85(0x193)](_0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x184)],_0x39f3bd),_0x39f3bd[_0x1b8b85(0x19f)][_0x1b8b85(0x190)]['forEach'](_0x595b84=>{const _0x16378d=_0x1b8b85;_0xca76d6['aliases'][_0x16378d(0x193)](_0x595b84,_0x39f3bd['config'][_0x16378d(0x184)]);});}),console[_0x3ce57e(0x186)](chalk[_0x3ce57e(0x196)](_0x3ce57e(0x189))),console[_0x3ce57e(0x186)]('​');});};
+
+// Event ve handler komutları şifrelidir. Deobfuscate yapmak tamamen hizmete aykırı bir durumdur.
+
+// Kodlar konusunda bir sorun yaşıyorsanız lütfen iletişime geçin. 
+
+// Discord: seanto
+
+// https://github.com/seantodev/ipinfo-bot
