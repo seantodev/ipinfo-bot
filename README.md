@@ -26,4 +26,4 @@ Bu, IP adreslerini sorgulamak ve ilgili bilgileri Discord sunucularında görün
 4. Tüm moduleler indirilince npm start yazıp başlatabilirsiniz.
 
 
-PROJEYİ ŞUANLIK RAR OLARAK İNDİRİP KULLANIN, SRC VİEWİ 2 GÜNE PUSHLAYACAĞIM.
+Projeyi benim iznim dışında paylaşmak tamamen yasaktır. Proje MIT Lisansı ile korunmaktadır.
