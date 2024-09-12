@@ -1,6 +1,6 @@
 echo off
 cls
 :a 
-title discord.gg/the100 made by seanto
+title Tears flow from God's eyes - S.
 node index.js
 goto a

@@ -1,12 +1,12 @@
 {
-  "name": "seanto1337",
+  "name": "seanto",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"
   },
-  "author": "made by seanto1337",
+  "author": "made by seanto",
   "license": "ISC",
   "dependencies": {
     "@androz2091/discord-invites-tracker": "^1.2.3",
